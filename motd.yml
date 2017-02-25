@@ -1,0 +1,10 @@
+---
+- hosts: all
+  remote_user: root
+  tasks:
+    - name: set motd
+      template: src=motd.j2 dest=/etc/motd
+    - name: set issue
+      template: src=motd.j2 dest=/etc/issue
+    - name: set issue.net
+      template: src=motd.j2 dest=/etc/issue.net

@@ -1,0 +1,16 @@
+
+-------------------------------------------------------------------------------
+                              Welcome to system
+{{ inventory_hostname|center(80) }}
+-------------------------------------------------------------------------------
+
+  OS            : {{ ansible_distribution }} {{ ansible_distribution_version }}
+  Hostname      : {{ ansible_fqdn }}
+  IP address    : {{ ansible_default_ipv4.address }}
+  System type   : {{ ansible_system }}
+  Processor     : {{ ansible_processor[0] }} {{ ansible_processor[1] }} * {{ ansible_processor_vcpus }}
+  Total Cores   : {{ ansible_processor_cores }}
+  Memory Total  : {{ ansible_memtotal_mb }} MB
+
+-------------------------------------------------------------------------------
+ 
